@@ -1,4 +1,12 @@
 # pizza-order-system
+~~~
+INSTRUCTION 
+1. Modified src/DBConnector.java to create connection to your database
+2. Run createTables.sql and PopulateData.sql to create table and populate data for pizza database system. 
+3 .Use "make" to compile java files
+4. Use "make run" to run java files.
+~~~
+
 The most obvious thing that needs to be tracked as part of this database system is the information about each pizza. A pizza has a crust type (thin, original, pan, gluten free) and a size (personal, medium, large, x- large). A pizza has an associated price and cost to the company, both of which are determined by the size of the pizza and the toppings on the pizza. A pizza can be in two states: completed by the kitchen or still being processed by the kitchen. Each pizza can have multiple toppings. Each topping has a name, a price to the customer, a price to the business, an amount used for each pizza size, a minimum inventory level, and a current inventory level (which is updated whenever a pizza is ordered). The same topping can be on many pizzas (i.e., several pizzas can have pepperoni on them). A customer can request extra of any topping, which is always a double amount. Cheese counts as a topping (there is no free cheese in this organization).
 
 Pizzas belong to orders. An order can be for dine in, pickup, or delivery. An order can have multiple pizzas on it. Each order has a total cost to the business, which is calculated by adding up the costs of each pizza. Each order should have a timestamp for when the food was ordered (so the kitchen can prioritize orders). Each order also has a total price to the customer, which is calculated by adding the prices of each pizza. If an order is for a dine in customer, then we need to know the table number. If an order is for pickup, then it needs to have a pickup customer associated with it. That customer must have a name and a phone number. If an order is for delivery, then it must have a delivery customer associated with it and include a name, phone number and address. A customer can have many orders, since the information is saved for the next time they order pizza. A customer could have some pickup orders, and some delivery orders. While other pizza places might allow a customer to save multiple addresses, Pizzas-R-Us only allows a customer to have one address.
@@ -10,13 +18,6 @@ The pizzeria is under new management and will be very closing monitoring profita
 • Popular Toppings: rank order of all the toppings (accounting for extra toppings) from most popular to least popular
 • Profit by Pizza: a summary of the profit by pizza size and crust type over a selected time period ordered by profit from most profitable to least profitable
 • Profit by Order Type: a summary of the profit for each of the three types of orders by month with a grand total over all the orders at the pizzeria
-~~~
-INSTRUCTION 
-1. Modified src/DBConnector.java to create connection to your database
-2. Run createTables.sql and PopulateData.sql to create table and populate data for pizza database system. 
-3 .Use "make" to compile java files
-4. Use "make run" to run java files.
-~~~
 
 Class relationship in Java files which take care of front-end, data processing, and conectivity to database.
  ![Screen Shot 2022-11-29 at 7 21 25 PM](https://user-images.githubusercontent.com/106266547/204677312-40933e2b-3936-4cb4-b1a0-f2b5755db68f.png)
