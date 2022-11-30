@@ -4,7 +4,8 @@ INSTRUCTION
 1. Modified src/DBConnector.java to create connection to your database
 2. Run createTables.sql and PopulateData.sql to create table and populate data for pizza database system. 
 3 .Use "make" to compile java files
-4. Use "make run" to run java files.
+4. Use "make run" to run java files
+5. Use "make clean" to clean .class files
 ~~~
 
 The most obvious thing that needs to be tracked as part of this database system is the information about each pizza. A pizza has a crust type (thin, original, pan, gluten free) and a size (personal, medium, large, x- large). A pizza has an associated price and cost to the company, both of which are determined by the size of the pizza and the toppings on the pizza. A pizza can be in two states: completed by the kitchen or still being processed by the kitchen. Each pizza can have multiple toppings. Each topping has a name, a price to the customer, a price to the business, an amount used for each pizza size, a minimum inventory level, and a current inventory level (which is updated whenever a pizza is ordered). The same topping can be on many pizzas (i.e., several pizzas can have pepperoni on them). A customer can request extra of any topping, which is always a double amount. Cheese counts as a topping (there is no free cheese in this organization).
