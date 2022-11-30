@@ -10,11 +10,13 @@ The pizzeria is under new management and will be very closing monitoring profita
 • Popular Toppings: rank order of all the toppings (accounting for extra toppings) from most popular to least popular
 • Profit by Pizza: a summary of the profit by pizza size and crust type over a selected time period ordered by profit from most profitable to least profitable
 • Profit by Order Type: a summary of the profit for each of the three types of orders by month with a grand total over all the orders at the pizzeria
-
+~~~
+INSTRUCTION 
 1. Modified src/DBConnector.java to create connection to your database
 2. Run createTables.sql and PopulateData.sql to create table and populate data for pizza database system. 
 3 .Use "make" to compile java files
 4. Use "make run" to run java files.
+~~~
 
 Class relationship in Java files which take care of front-end, data processing, and conectivity to database.
  ![Screen Shot 2022-11-29 at 7 21 25 PM](https://user-images.githubusercontent.com/106266547/204677312-40933e2b-3936-4cb4-b1a0-f2b5755db68f.png)
