@@ -18,13 +18,19 @@ The pizzeria also needs to track some base prices for their pizzas. Each pizza n
 
 The pizzeria is under new management and will be very closing monitoring profitability. To make this easier to do, you will need to implement three views that support these reports. Management would like reports (aka views) on:
 • Popular Toppings: rank order of all the toppings (accounting for extra toppings) from most popular to least popular
+
 ![image](https://user-images.githubusercontent.com/106266547/204679002-c73ca80e-cbe6-4b59-b80b-b46bc5cb6a9f.png)
 
+
 • Profit by Pizza: a summary of the profit by pizza size and crust type over a selected time period ordered by profit from most profitable to least profitable
+
 ![image](https://user-images.githubusercontent.com/106266547/204679043-f72af3e9-3060-4878-9720-3f334205c6dd.png)
 
+
 • Profit by Order Type: a summary of the profit for each of the three types of orders by month with a grand total over all the orders at the pizzeria
+
 ![image](https://user-images.githubusercontent.com/106266547/204679061-c216659d-a558-4022-a03f-7e971cf08e17.png)
+
 
 Class relationship in Java files which take care of front-end, data processing, and conectivity to database.
  ![Screen Shot 2022-11-29 at 7 21 25 PM](https://user-images.githubusercontent.com/106266547/204677312-40933e2b-3936-4cb4-b1a0-f2b5755db68f.png)
